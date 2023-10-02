@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaRemover">
+
+    <ListView
+        android:id="@+id/lv_estabelecimentos2"
+        android:layout_width="409dp"
+        android:layout_height="508dp"
+        android:dividerHeight="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_remover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/et_cnpj"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="CNPJ"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/bt_voltar5"
+        app:layout_constraintEnd_toStartOf="@+id/bt_remover"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_estabelecimentos2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_remover"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="Remover"
+        app:layout_constraintBottom_toTopOf="@+id/bt_voltar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_cnpj"
+        app:layout_constraintTop_toBottomOf="@+id/lv_estabelecimentos2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_voltar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_remover"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
